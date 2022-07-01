@@ -31,7 +31,7 @@ svg {
 
 
 .line {
-    --colorA: #f24983;
+    /* --colorA: #f24983; */
     fill: none;
     stroke-width: 10;
     stroke-linejoin: round;
@@ -40,16 +40,23 @@ svg {
     stroke-dasharray: 328 600;
     animation: rotate 2s infinite linear;   
     filter:
+        drop-shadow(0 0 2px #f24983)
+        drop-shadow(0 0 5px #f24983)
+        drop-shadow(0 0 10px #f24983)
+        drop-shadow(0 0 15px #f24983)
+        drop-shadow(0 0 25px #f24983);
+    /* filter:
         drop-shadow(0 0 2px var(--colorA))
         drop-shadow(0 0 5px var(--colorA))
         drop-shadow(0 0 10px var(--colorA))
         drop-shadow(0 0 15px var(--colorA))
-        drop-shadow(0 0 25px var(--colorA));
+        drop-shadow(0 0 25px var(--colorA)); */
 }
 
 .line2 {
     animation: rotate 2s infinite -1s linear;   
-    --colorA: #37c1ff;
+    /* --colorA: #37c1ff; */
+    background-color: #37c1ff;
 }
 
 
